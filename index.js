@@ -25,7 +25,8 @@ while(running == true){
             window.alert("TOO HIGH! Try again.");
         }
         else{
-            window.alert(`CORRECT! The answer was ${answer}. It took you ${attempts} attempts.`);
+            window.alert(`CORRECT! The answer was ${answer}. It took you ${attempts} attempts. Press OK to continue.`);
+            document.getElementById('content').classList.remove('hidden');
             running = false;
         }
     }
